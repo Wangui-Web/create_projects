@@ -11,51 +11,57 @@
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="header-log-in">
-            <h3><a href="log-in.html">Log in</a></h3>
-            <h3><a href="create-account.html">Create Account</a></h3>
-        </div>
+    <div id="container">
+        <div id="body-container">
+            <header class="header-container">
+                <div class="header-log-in">
+                    <h3><a href="log-in.html">Log in</a></h3>
+                    <h3><a href="create-account.html">Create Account</a></h3>
+                </div>
 
-        <h1>Express</h1>
+                <h1>Express</h1>
 
-        <nav class="nav-menu">
-            <ul class="nav-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="log-in.html">Log in</a></li>
-                <li><a href="create-account.html">Create Account</a></li>
-            </ul>
-        </nav>
+                <nav class="nav-menu">
+                    <ul class="nav-ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="log-in.html">Log in</a></li>
+                        <li><a href="create-account.html">Create Account</a></li>
+                    </ul>
+                </nav>
 
-        <button type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
-        <side class="menu-content">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </side>
-    </header>
-    <main class="main-container">
-        <div class="background-main">
-            <h1>Express <br> Yourself!</h1>
-            <p>Through words write and be heard</p>
-        </div>
-        <section class="blog-post-container">
-            <div class="blog-container">
-                <h2><a href="#">Blogs</a></h2>
-                <button> Create a Blog</button>
+                <button type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
+                <side class="menu-content">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </side>
+            </header>
+            <div class="main-wrapper">
+                <main class="main-container">
+                    <div class="background-main">
+                        <h1>Express <br> Yourself!</h1>
+                        <p>Through words write and be heard</p>
+                    </div>
+                    <div class="blog-post-container">
+                        <div class="blog-container">
+                            <h2><a href="#">Blogs</a></h2>
+                            <button> Create a Blog</button>
+                        </div>
+                        <div class="post-container">
+                            <h2><a href="#">Posts</a></h2>
+                            <button>Read posted articles and blogs.</button>
+                        </div>
+                    </div>
+                </main>
             </div>
-            <div class="post-container">
-                <h2><a href="#">Posts</a></h2>
-                <button>Read posted articles and blogs.</button>
-            </div>
-        </section>
-    </main>
+        </div>
+    </div>
     <footer class="footer-container">
         <section class="footer-content">
             <h3><a href="#">Home</a></h3>

@@ -11,50 +11,57 @@
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="header-log-in">
-            <h3><a href="log-in.html">Log in</a></h3>
-            <h3><a href="create-account.html">Create Account</a></h3>
+    <div id="container">
+        <div id="body-container">
+            <header class="header-container">
+                <div class="header-log-in">
+                    <h3><a href="log-in.html">Log in</a></h3>
+                    <h3><a href="create-account.html">Create Account</a></h3>
+                </div>
+
+                <h1>Express</h1>
+
+                <nav class="nav-menu">
+                    <ul class="nav-ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="log-in.html">Log in</a></li>
+                        <li><a href="create-account.html">Create Account</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
+                <side class="menu-content">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </side>
+            </header>
+            <div class="create-account-container">
+                <form class="form-container" action="create-account.php" method="POST">
+                    <p>Enter your forename:</p>
+                    <input type="text" placeholder="example:John">
+                    <p>Enter your surname:</p>
+                    <input type="text" placeholder="example:Doe">
+                    <p>Enter your email:</p>
+                    <input type="text" placeholder="example:johndoe@gmail.com">
+                    <p>Create your password:</p>
+                    <input type="password" placeholder="example:John_Doe123">
+                    <p>Re-enter your password:</p>
+                    <input type="password" placeholder="example:John_Doe123"><br>
+
+                    <button type="submit">Submit</button>
+
+                    <p>If you have an account click <b><a href="log-in.html">here</a></b></p>
+                </form>
+            </div>
         </div>
-
-        <h1>Express</h1>
-
-        <nav class="nav-menu">
-            <ul class="nav-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="log-in.html">Log in</a></li>
-                <li><a href="create-account.html">Create Account</a></li>
-            </ul>
-        </nav>
-
-        <button type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
-        <side class="menu-content">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </side>
-    </header>
-    <form action="create-account.php" method="POST">
-        <p>Enter your forename:</p><br>
-        <input type="text" placeholder="example:John">
-        <p>Enter your surname:</p><br>
-        <input type="text" placeholder="example:Doe">
-        <p>Enter your email:</p><br>
-        <input type="text" placeholder="example:johndoe@gmail.com"><br>
-        <p>Create your password:</p><br>
-        <input type="password" placeholder="example:John_Doe123">
-        <p>Re-enter your password:</p><br>
-        <input type="password" placeholder="example:John_Doe123"><br>
-
-        <button type="submit">Submit</button>
-        <p>If you have an account click <b><a href="log-in.html">here</a></b></p>
-    </form>
+    </div>
     <footer class="footer-container">
         <section class="footer-content">
             <h3><a href="#">Home</a></h3>
@@ -73,6 +80,7 @@
             <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
         </div>
     </footer>
+
 </body>
 <script src="express.js"></script>
 

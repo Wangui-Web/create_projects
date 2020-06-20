@@ -11,44 +11,50 @@
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="header-log-in">
-            <h3><a href="log-in.html">Log in</a></h3>
-            <h3><a href="create-account.html">Create Account</a></h3>
+    <div id="container">
+        <div id="body-container">
+            <header class="header-container">
+                <div class="header-log-in">
+                    <h3><a href="log-in.html">Log in</a></h3>
+                    <h3><a href="create-account.html">Create Account</a></h3>
+                </div>
+
+                <h1>Express</h1>
+
+                <nav class="nav-menu">
+                    <ul class="nav-ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="log-in.html">Log in</a></li>
+                        <li><a href="create-account.html">Create Account</a></li>
+                    </ul>
+                </nav>
+
+                <button type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
+                <side class="menu-content">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </side>
+            </header>
+            <div class="log-in-container">
+                <form class="form-container" action="log-in.php" method="POST">
+
+                    <p>Enter your password:</p><br>
+                    <input type="password" placeholder="example:John_Doe">
+                    <p>Enter your email:</p><br>
+                    <input type="text" placeholder="example:johndoe@gmail.com"><br>
+                    <button type="submit">Submit</button>
+                    <p>If you do not have an account create one <b><a href="create-account.html">here</a></b></p>
+                </form>
+            </div>
         </div>
-
-        <h1>Express</h1>
-
-        <nav class="nav-menu">
-            <ul class="nav-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="log-in.html">Log in</a></li>
-                <li><a href="create-account.html">Create Account</a></li>
-            </ul>
-        </nav>
-
-        <button type="button" onclick="toggle()"><i class="fas fa-bars"></i></button>
-        <side class="menu-content">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Posts</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </side>
-    </header>
-    <form action="log-in.php" method="POST">
-
-        <p>Enter your password:</p><br>
-        <input type="password" placeholder="example:John_Doe">
-        <p>Enter your email:</p><br>
-        <input type="text" placeholder="example:johndoe@gmail.com"><br>
-        <button type="submit">Submit</button>
-        <p>If you do not have an account create one <b><a href="create-account.html">here</a></b></p>
-    </form>
+    </div>
     <footer class="footer-container">
         <section class="footer-content">
             <h3><a href="#">Home</a></h3>
@@ -67,6 +73,7 @@
             <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
         </div>
     </footer>
+
 </body>
 <script src="express.js"></script>
 
